@@ -14,15 +14,68 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- adding tailwindcss  -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css file  -->
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <div class="container">
+    <!--top navbar  -->
+    <nav class="flex justify-around items-center py-4">
+        <img src="./assets/images/logo.png" alt="carrot-logo" />
+        <form class="border-2 border-indigo-600 w-5/12 rounded-md flex">
+            <input type="search" name="keywords" id="" class="flex-1 px-2 rounded-md" placeholder="Search For items...">
+            <select name="category" id="" class="py-2 px-4 border-l-2 border-indigo-600">
+                <option value="">All Categories</option>
+                <option value="mens">Mens</option>
+                <option value="Womens">Womens</option>
+                <option value="electronics">Electronics</option>
+            </select>
+            <button class="bg-indigo-600 py-2 px-3 text-white">
+                <i class="ri-search-line"></i>
+            </button>
+        </form>
 
-    </div>
+        <div class="flex gap-6">
+            <button class="text-lg">
+                <i class="ri-user-3-line"></i>
+                Account
+            </button>
+            <button class="text-lg">
+                <i class="ri-heart-3-line"></i>
+                Wishlist
+            </button>
+            <button class="text-lg">
+                <i class="ri-shopping-cart-line"></i>
+                Cart
+            </button>
+        </div>
+    </nav>
+
+    <!-- main navbar  -->
+    <nav class="flex justify-around items-center py-4">
+        <button class="border py-1 px-2 rounded-md bg-white text-2xl">
+            <i class="ri-menu-2-line"></i>
+        </button>
+        <ul class="flex gap-12">
+            <li><a href="#" class="text-md font-semibold">Home</a></li>
+            <li><a href="#" class="text-md font-semibold">Category</a></li>
+            <li><a href="#" class="text-md font-semibold">Products</a></li>
+            <li><a href="#" class="text-md font-semibold">Blog</a></li>
+            <li><a href="#" class="text-md font-semibold">Contact</a></li>
+        </ul>
+
+        <select name="location" id="" class="border py-2 px-16">
+            <option value="">Choose Your Location</option>
+            <option value="new-delhi">Current Location</option>
+            <option value="new-delhi">New Delhi</option>
+            <option value="new-delhi">Noida</option>
+            <option value="new-delhi">Gurugram</option>
+            <option value="new-delhi">Lucknow</option>
+        </select>
+    </nav>
+    <hr />
 
 
-    <script src="./script/main.js"></script>
 </body>
 
 </html>
